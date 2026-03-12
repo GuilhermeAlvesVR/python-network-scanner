@@ -1,4 +1,4 @@
-# Python Network# Python Network Scanner
+# Python Network Scanner
 
 Ferramenta de linha de comando desenvolvida em **Python** para escanear redes locais e identificar portas abertas em dispositivos conectados.
 
@@ -15,27 +15,19 @@ Este projeto foi criado com o objetivo de praticar:
 
 ## Funcionalidades
 
-O scanner realiza:
+O scanner oferece as seguintes funcionalidades:
 
-- Descoberta de hosts ativos em uma rede
-- Verificação de portas comuns abertas
-- Execução paralela para maior velocidade
-- Salvamento automático dos resultados em arquivo
+1. **Descoberta de Hosts Ativos**  
+   Verifica dispositivos ativos dentro de uma rede.
 
----
+2. **Escaneamento de Portas Comuns**  
+   Identifica portas abertas em cada host encontrado.
 
-## Portas Verificadas
+3. **Execução Paralela**  
+   Utiliza multithreading para acelerar o processo de escaneamento.
 
-O programa verifica algumas portas comuns:
-
-- 22 → SSH  
-- 80 → HTTP  
-- 135 → RPC  
-- 139 → NetBIOS  
-- 443 → HTTPS  
-- 445 → SMB  
-- 3389 → RDP  
-- 8080 → HTTP Alternativo
+4. **Registro dos Resultados**  
+   Salva automaticamente os resultados em um arquivo `.txt`.
 
 ---
 
@@ -55,7 +47,7 @@ python-network-scanner
 ## Requisitos
 
 - Python 3
-- Linux / WSL / MacOS / Windows
+- Linux / WSL / Windows / MacOS
 
 ---
 
@@ -79,7 +71,7 @@ Execute o scanner:
 python3 scanner.py
 ```
 
-Informe a rede para escaneamento:
+Digite a rede que deseja escanear:
 
 ```
 192.168.0.0/24
@@ -104,6 +96,22 @@ Escaneamento finalizado.
 
 Hosts encontrados: 1
 ```
+
+Um arquivo de resultado também será gerado automaticamente:
+
+```
+scan_result_YYYY-MM-DD_HH-MM-SS.txt
+```
+
+---
+
+## Tecnologias Utilizadas
+
+- Python
+- Socket Programming
+- Multithreading
+- Git
+- GitHub
 
 ---
 
